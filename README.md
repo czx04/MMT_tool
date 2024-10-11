@@ -15,13 +15,5 @@ Script sẽ:
 
 
 ## Cách Chạy Script
-
-1. **Tải Script**
-
-2. **Mở Command Prompt hoặc Terminal**:
-   - Di chuyển đến thư mục nơi lưu trữ file script.
-
-3. **Chạy Script**:
-   Chạy lệnh sau để thực thi script:
-   ```bash
-   python {tên_file_ban_luu}
+Tải về xong run thui
+Ez
