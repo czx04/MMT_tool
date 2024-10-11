@@ -1,5 +1,5 @@
 # Hướng Dẫn Sử Dụng Script
-
+### Dùng cho window nhé mấy cu
 Script Python này cho phép bạn thực hiện lệnh `ping` và `tracert` liên tục dựa trên đầu vào từ người dùng. 
 
 ## Tổng Quan về Script
