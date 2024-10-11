@@ -1,16 +1,33 @@
-# This is a sample Python script.
+import subprocess
+import shlex
+import re
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def check_ping_output(ping_output: str) -> str:
+    if "Request timed out." in ping_output:
+        return "đéo đúng"
+
+    time_values = re.findall(r'time=(\d+)ms', ping_output)
+
+    if time_values:
+        max_time = max(map(int, time_values))
+        return f"Thời gian truy cập lớn nhất: {max_time}ms"
+    else:
+        return "Không tìm thấy giá trị 'time' trong đầu ra của lệnh ping."
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+# def check_tracert(address: str) -> str:
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+s = "ping -c 4 8.8.8.8"
+v = "Tracert 8.8.4.4"
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+command = shlex.split(s)
+commandv = shlex.split(v)
+result = subprocess.run(command, capture_output=True, text=True, shell=True)
+djtmemay = subprocess.run(commandv, capture_output=True, text=True, shell=True)
+
+print(result.stdout)
+print(djtmemay.stdout)
+
+output_result = check_ping_output(result.stdout)
+print(output_result)
