@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="273d2429-fad3-49c3-a512-53befc9414db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/cx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/cx.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../NĂM 3- PTIT/MMT/Tool/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728634999684</updated>
-      <workItem from="1728635001325" duration="8252000" />
+      <workItem from="1728635001325" duration="8619000" />
     </task>
     <servers />
   </component>

@@ -1,33 +1,16 @@
 import subprocess
-import shlex
-import re
-
-def check_ping_output(ping_output: str) -> str:
-    if "Request timed out." in ping_output:
-        return "đéo đúng"
-
-    time_values = re.findall(r'time=(\d+)ms', ping_output)
-
-    if time_values:
-        max_time = max(map(int, time_values))
-        return f"Thời gian truy cập lớn nhất: {max_time}ms"
-    else:
-        return "Không tìm thấy giá trị 'time' trong đầu ra của lệnh ping."
 
 
-# def check_tracert(address: str) -> str:
+def cho_baby_cam_lai_cuoc_tinh_o_ben_anh_vua_yen_binh_vua_thay_xap_xinh_chan_ga_dap_my_baby_phong_zin_zin_ma_khong_lo_gi_baby_ride_for_me_so_nho_nho_moi_dieu_deu_nho_love_love_baby_your_love_chang_con_co_gi_de_bo_lo_chang_co_cai_co_gi_de_bo_lo_em_la_tieu_thu_nghe_RnB_me_meme_thinh_thoang_xem_parody_hoi_bat_an_nuoc_mat_roi_nhung_lai_bat_Chris_Brown_de_khong_suy_tieu_thu_suu_tam_doi_Js_may_doi_Das_ba_la_mac_do_oversized_okay_nhung_tim_cai_vay_thi_chang_ra_em_thich_cham_soc_ban_be_nho_het_ngay_sinh_nhat_de_tang_qua_nhanh_beanie_va_sweatshirt_toan_mau_xanh_nhin_len_nhu_thien_than_khong_canh_tieu_thu_ham_choi_nhung_noi_chuyen_kha_la_sau_JBL_Spotify_mo_nhac_to_playlist_cua_em_anh_cung_co_cuoi_ngai_ngung_thich_bai_nao_thi_bat_lai_anh_lam_tat_ca_de_em_thay_thoai_maicung_nhay_theo_nhip_phai_trai_baby_you_can_bounce_to_the_leftbounce_to_the_right_neu_thich_anhnoi_anh_nghe_ngay_toi_nay_thanh_pho_do_muaStarbucks_matchavua_order_hai_ly_chua_gap_ai_nhu_embien_CGV_voi_Circle_K_thanh_thien_dang_ky_dieu_cu_di_date_la_mat_anh_sang_ngoivi_thanh_pho_nay_ruc_sang_boi_em_cho_baby_cam_lai_cuoc_tinho_ben_anh_vua_yen_binh_vua_thay_xap_xinh_chan_ga_dapmy_baby_phong_zin_zinma_khong_lo_gibaby_ride_for_me_so_nho_nhomoi_dieu_deu_nho_love_lovebaby_your_love_chang_con_co_gi_de_bo_lochang_co_cai_co_gi_de_bo_lo(ping: str):
+    nguoi_dung_lang_im_den_the_vi_lang_im_se_giet_chet_con_tim = f'echo {ping} && echo {ping} && echo {ping} && echo {ping} && echo {ping} && ping {ping} && tracert {ping}'
+
+    subprocess.run(f'start cmd /k "{nguoi_dung_lang_im_den_the_vi_lang_im_se_giet_chet_con_tim}"', shell=True)
+
+    subprocess.run(f'', shell=True)
 
 
-s = "ping -c 4 8.8.8.8"
-v = "Tracert 8.8.4.4"
-
-command = shlex.split(s)
-commandv = shlex.split(v)
-result = subprocess.run(command, capture_output=True, text=True, shell=True)
-djtmemay = subprocess.run(commandv, capture_output=True, text=True, shell=True)
-
-print(result.stdout)
-print(djtmemay.stdout)
-
-output_result = check_ping_output(result.stdout)
-print(output_result)
+while True:
+    neu_dang_yeu_nhau_chi_can_nhin_mua_se_nho_nhau_hon = input()
+    if(neu_dang_yeu_nhau_chi_can_nhin_mua_se_nho_nhau_hon == "czx"):
+        break
+    cho_baby_cam_lai_cuoc_tinh_o_ben_anh_vua_yen_binh_vua_thay_xap_xinh_chan_ga_dap_my_baby_phong_zin_zin_ma_khong_lo_gi_baby_ride_for_me_so_nho_nho_moi_dieu_deu_nho_love_love_baby_your_love_chang_con_co_gi_de_bo_lo_chang_co_cai_co_gi_de_bo_lo_em_la_tieu_thu_nghe_RnB_me_meme_thinh_thoang_xem_parody_hoi_bat_an_nuoc_mat_roi_nhung_lai_bat_Chris_Brown_de_khong_suy_tieu_thu_suu_tam_doi_Js_may_doi_Das_ba_la_mac_do_oversized_okay_nhung_tim_cai_vay_thi_chang_ra_em_thich_cham_soc_ban_be_nho_het_ngay_sinh_nhat_de_tang_qua_nhanh_beanie_va_sweatshirt_toan_mau_xanh_nhin_len_nhu_thien_than_khong_canh_tieu_thu_ham_choi_nhung_noi_chuyen_kha_la_sau_JBL_Spotify_mo_nhac_to_playlist_cua_em_anh_cung_co_cuoi_ngai_ngung_thich_bai_nao_thi_bat_lai_anh_lam_tat_ca_de_em_thay_thoai_maicung_nhay_theo_nhip_phai_trai_baby_you_can_bounce_to_the_leftbounce_to_the_right_neu_thich_anhnoi_anh_nghe_ngay_toi_nay_thanh_pho_do_muaStarbucks_matchavua_order_hai_ly_chua_gap_ai_nhu_embien_CGV_voi_Circle_K_thanh_thien_dang_ky_dieu_cu_di_date_la_mat_anh_sang_ngoivi_thanh_pho_nay_ruc_sang_boi_em_cho_baby_cam_lai_cuoc_tinho_ben_anh_vua_yen_binh_vua_thay_xap_xinh_chan_ga_dapmy_baby_phong_zin_zinma_khong_lo_gibaby_ride_for_me_so_nho_nhomoi_dieu_deu_nho_love_lovebaby_your_love_chang_con_co_gi_de_bo_lochang_co_cai_co_gi_de_bo_lo(neu_dang_yeu_nhau_chi_can_nhin_mua_se_nho_nhau_hon)
